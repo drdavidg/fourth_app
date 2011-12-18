@@ -39,5 +39,6 @@ group :test, :development do
   gem 'rspec-rails', "~> 2.6"
   gem 'webrat'
   gem 'factory_girl_rails'
+  gem 'pg'
 end
 
