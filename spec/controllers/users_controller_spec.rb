@@ -102,6 +102,11 @@ render_views  #required to add in so that the have_selector method works
         post :create, :user => @attr
         flash[:success].should =~ /welcome to the sample app/i
       end
+      
+      it "should sign the user in" do
+        post :create, :user => @attr
+        controller.should be_signed_in
+      end
 
     end
   end  
